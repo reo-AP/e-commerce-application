@@ -1,0 +1,60 @@
+{
+    "QUEUE_NAMES" : {
+        "PRODUCT_QUEUE": "products",
+        "CUSTOMER_QUEUE": "customers",
+        "ORDER_QUEUE": "orders",
+        "TRANSACTION": "transactions",
+        "USER_QUEUE": "users"
+    },
+    "ERRORS": {
+        "ERROR_CONNECTING_DATABASE": {
+            "message": "Database failed to connect",
+            "code": 502 
+        },
+        "ERROR_CONNECTING_AMQP":{
+            "message": "AMQP failed to connect",
+            "code": 502
+        },
+        "ERROR_CREATING_QUEUE":{
+            "message": "Queue creation failed",
+            "code": 502
+        },
+        "BAD_REQUEST":{
+            "message": "Please check for the request body sent",
+            "code": 400
+        },
+        "UNAUTHORIZED_REQUEST":{
+            "message": "Unautorized request",
+            "code": 403
+        },
+        "UNHANDLED_ERROR":{
+            "message":  "Something happened at server",
+            "code": 500
+        },
+        "PUBLISHER_FAILED":{
+            "message": "Failed to publish message",
+            "code": 502
+        },
+        "USER_NOT_FOUND":{
+            "message": "User can not be found",
+            "code": 401
+        },
+        "CREDS_DID_NOT_MATCH":{
+            "message": "User credentials did not match",
+            "code": 401
+        },
+        "USER_ALREADY_EXISTS":{
+            "message": "User email already exists",
+            "code": 409
+        },
+        "USER_CREATION_FAILED":{
+            "message": "Internal server error, user not created",
+            "code": 500
+        }
+    },
+    "ROLES":{
+        "1": { "key":"ADMIN", "value": "1"},
+        "2": { "key":"SELLER", "value": "2"},
+        "3": { "key":"CUSTOMER", "value": "3"}
+    } 
+}
